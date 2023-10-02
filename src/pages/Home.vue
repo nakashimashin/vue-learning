@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <router-view />
+  <div>
+    <div>Home</div>
+  </div>
 </template>
 
 <style scoped>
