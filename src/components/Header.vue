@@ -2,15 +2,13 @@
 </script>
 
 <template>
-  <div>
     <div class="body-header">Header</div>
-  </div>
 </template>
 
 <style scoped>
 .body-header{
     width: 100%;
-    height: 20%;
+    height: 10%;
     background-color: red;
 }
 </style>
