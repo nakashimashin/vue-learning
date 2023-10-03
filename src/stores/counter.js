@@ -8,6 +8,11 @@ export const useStoreCounter = defineStore('counter', {
             name: 'John Doe',
         },
     }),
+    getters: {
+        doubleCount(state) {
+            return state.count*2;
+        },
+    },
     actions: {
         increment() {
             this.count++;
