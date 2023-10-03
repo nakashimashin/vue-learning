@@ -8,4 +8,9 @@ export const useStoreCounter = defineStore('counter', {
             name: 'John Doe',
         },
     }),
+    actions: {
+        increment() {
+            this.count++;
+        },
+    },
 });

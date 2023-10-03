@@ -8,6 +8,7 @@ const counter = useStoreCounter();
     <div>Home</div>
     <p>Count:{{ counter.count }}</p>
     <p>Count2:{{ counter.count2 }}</p>
+    <button @click="counter.increment()">Up</button>
   </div>
 </template>
 
