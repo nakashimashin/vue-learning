@@ -5,10 +5,10 @@
     <div class="container">
         <div class="title">VueLearning</div>
         <div class="buttons">
-            <button class="button">About</button>
-            <button class="button">SERVICE</button>
-            <button class="button">COMPANY</button>
-            <button class="button">CONTACT</button>
+            <div class="button">About</div>
+            <div class="button">SERVICE</div>
+            <div class="button">COMPANY</div>
+            <div class="button">CONTACT</div>
         </div>
     </div>
 </template>
@@ -25,13 +25,18 @@
 }
 .title{
     margin-left: 3%;
+    font-size: 150%;
 }
 .buttons{
+    display: flex;
+    flex-direction: row;  
     margin-right: 3%;
 }
 .button{
     border: none;
     background: none;
+    margin-right: 3%;
+    font-size: 100%;
 }
 .button:hover{
     background-color: rgb(143, 29, 29);
