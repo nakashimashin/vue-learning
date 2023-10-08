@@ -1,5 +1,6 @@
 <script setup>
 import { useStoreCounter } from '@/stores/counter';
+import { useStoreHeader } from '@/stores/header';
 import Header from '@/components/Header.vue';
 const counter = useStoreCounter();
 
@@ -9,7 +10,7 @@ const counter = useStoreCounter();
   <div class="body">
     <Header />
     <div>
-      <div class="container">Home</div>
+      <div>Home</div>
       <p>Count:{{ counter.count }}</p>
       <p>DoubleCount: {{ counter.doubleCount }}</p>
       <button @click="counter.increment()">Up</button>
@@ -22,7 +23,5 @@ const counter = useStoreCounter();
 .body{
   height: 100vh;
   width: 100vw;
-}
-.container{
 }
 </style>

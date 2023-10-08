@@ -1,11 +1,23 @@
 <script setup>
+import { useStoreHeader } from '@/stores/header';
+
+const header = useStoreHeader();
+
+const openAbout = () => {
+    header.isOpenAbout = true;
+    console.log(header.isOpenAbout);
+}
+
 </script>
 
 <template>
     <div class="container">
         <div class="title">VueLearning</div>
         <div class="buttons">
-            <div class="button">About</div>
+            <div class="button">
+                <div @click="openAbout">About</div>
+                <div v-show="header.isOpenAbout">aaaa</div>
+            </div>
             <div class="button">SERVICE</div>
             <div class="button">COMPANY</div>
             <div class="button">CONTACT</div>
